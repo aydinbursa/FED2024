@@ -1,0 +1,31 @@
+{% include "partials/_head.html" %}
+
+<body id="page-top">
+    <div id="wrapper">
+
+        {% include "partials/_navbar.html" %}
+
+        <div class="d-flex flex-column" id="content-wrapper">
+            <div id="content">
+     
+                {% include "partials/_topbar.html" %}
+
+
+{% block content %}
+
+
+{% endblock %}
+
+
+            </div>         
+            {% include "partials/_footer.html" %}
+
+        </div>
+        
+        <a class="border rounded d-inline scroll-to-top" href="#page-top"><i class="fas fa-angle-up"></i></a>
+    </div>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/theme.js"></script>
+</body>
+
+</html>
