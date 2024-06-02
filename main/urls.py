@@ -12,4 +12,7 @@ urlpatterns = [
     path("settings.html", views.settings),
     path("login.html", views.login),
     path("404.html", views.p404),
+    path("n_facture.html", views.n_facture),
+    path("n_client.html", views.n_client),
+    path("n_devis.html", views.n_devis),
 ]

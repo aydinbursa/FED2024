@@ -27,3 +27,12 @@ def login(request):
 
 def p404(request):
     return render(request, "404.html")
+
+def n_facture(request):
+    return render(request, "n_facture.html")
+
+def n_client(request):
+    return render(request, "n_client.html")
+
+def n_devis(request):
+    return render(request, "n_devis.html")
