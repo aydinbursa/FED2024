@@ -1,0 +1,146 @@
+{% extends "layout.html" %}
+
+{% block content%}
+
+<div class="container-fluid">
+    <div class="row">
+        <div class="col">
+            <div class="card-group">
+                <div class="card"></div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-12 col-xl-8 offset-lg-0" style="width: 960px;">
+            <div class="card shadow mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h6 class="text-primary fw-bold m-0">Nouvelle Devis</h6>
+                    <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
+                        <div class="dropdown-menu shadow dropdown-menu-end animated--fade-in">
+                            <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" href="#"> Action</a><a class="dropdown-item" href="#"> Another action</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#"> Something else here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div id="dataTable-2" class="table-responsive table mt-2" role="grid" aria-describedby="dataTable_info">
+                        <table id="dataTable" class="table my-0">
+                            <thead>
+                                <tr>
+                                    <th style="width: 120px;">No Devis:</th>
+                                    <th>Client</th>
+                                    <th>Date Devis</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input type="text" style="width: 120px;" /></td>
+                                    <td>
+                                        <div class="form-group mb-3"><small></small>
+                                            <div class="input-group border-1"><span class="bg-white input-group-text InputBorder"><svg class="bi bi-person-plus-fill" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"></path>
+                                                        <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"></path>
+                                                    </svg></span><input class="form-control InputBorder" type="email" placeholder="Creer ou selection client" style="/*border: 0;*//*border-width: 0 0 1px 0;*//*border-color: black;*//*border-radius: 0;*/" /></div>
+                                            <div class="input-group"><span class="bg-white input-group-text InputBorder"><svg class="bi bi-pin-map-fill" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                                        <path fill-rule="evenodd" d="M3.1 11.2a.5.5 0 0 1 .4-.2H6a.5.5 0 0 1 0 1H3.75L1.5 15h13l-2.25-3H10a.5.5 0 0 1 0-1h2.5a.5.5 0 0 1 .4.2l3 4a.5.5 0 0 1-.4.8H.5a.5.5 0 0 1-.4-.8z"></path>
+                                                        <path fill-rule="evenodd" d="M4 4a4 4 0 1 1 4.5 3.969V13.5a.5.5 0 0 1-1 0V7.97A4 4 0 0 1 4 3.999z"></path>
+                                                    </svg></span><input class="form-control InputBorder" type="email" placeholder="Adresse" style="/*border: 0;*//*border-width: 0 0 1px 0;*//*border-color: black;*//*border-radius: 0;*/" /></div>
+                                            <div class="input-group"><span class="bg-white input-group-text InputBorder"><svg class="bi bi-telephone" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                                        <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
+                                                    </svg></span><input class="form-control InputBorder" type="email" placeholder="Telephone" style="/*border: 0;*//*border-width: 0 0 1px 0;*//*border-color: black;*//*border-radius: 0;*/" inputmode="tel" /></div>
+                                            <div class="input-group"><span class="bg-white input-group-text InputBorder"><svg class="bi bi-mailbox2" xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16">
+                                                        <path d="M9 8.5h2.793l.853.854A.5.5 0 0 0 13 9.5h1a.5.5 0 0 0 .5-.5V8a.5.5 0 0 0-.5-.5H9z"></path>
+                                                        <path d="M12 3H4a4 4 0 0 0-4 4v6a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1V7a4 4 0 0 0-4-4M8 7a3.99 3.99 0 0 0-1.354-3H12a3 3 0 0 1 3 3v6H8zm-3.415.157C4.42 7.087 4.218 7 4 7c-.218 0-.42.086-.585.157C3.164 7.264 3 7.334 3 7a1 1 0 0 1 2 0c0 .334-.164.264-.415.157"></path>
+                                                    </svg></span><input class="form-control InputBorder" type="email" placeholder="e-mail" style="/*border: 0;*//*border-width: 0 0 1px 0;*//*border-color: black;*//*border-radius: 0;*/" /></div>
+                                        </div>
+                                    </td>
+                                    <td><input type="date" /></td>
+                                    <td style="width: 41px;height: 41px;"><i class="far fa-trash-alt fa-fw"></i></td>
+                                    <td style="height: 41px;width: 41px;"><i class="fas fa-edit fa-fw"></i></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr class="fw-bold"></tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 col-xl-8 offset-lg-0" style="width: 960px;">
+            <div class="card shadow mb-4">
+                <div class="card-header d-flex justify-content-between align-items-center">
+                    <h6 class="text-primary fw-bold m-0">Ligne de Devis</h6>
+                    <div class="dropdown no-arrow"><button class="btn btn-link btn-sm dropdown-toggle" aria-expanded="false" data-bs-toggle="dropdown" type="button"><i class="fas fa-ellipsis-v text-gray-400"></i></button>
+                        <div class="dropdown-menu shadow dropdown-menu-end animated--fade-in">
+                            <p class="text-center dropdown-header">dropdown header:</p><a class="dropdown-item" href="#"> Action</a><a class="dropdown-item" href="#"> Another action</a>
+                            <div class="dropdown-divider"></div><a class="dropdown-item" href="#"> Something else here</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <div id="dataTable-1" class="table-responsive table mt-2" role="grid" aria-describedby="dataTable_info">
+                        <table id="dataTable" class="table my-0">
+                            <thead>
+                                <tr>
+                                    <th>Ref:</th>
+                                    <th style="width: 250px;">Designation</th>
+                                    <th style="width: 60px;">unite</th>
+                                    <th style="width: 60px;">Quantite</th>
+                                    <th style="width: 60px;">Prix U.</th>
+                                    <th style="width: 60px;">TVA</th>
+                                    <th style="width: 80px;">Total HT</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td style="width: 55px;">
+                                        <div class="form-group mb-3"><label class="form-label" for="text-input"></label><input id="text-input" type="text" name="ref-input" style="width: 60px;" autocomplete="on" /></div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group mb-3"><label class="form-label" for="text-input"></label><input id="text-input-1" type="text" name="article-input" style="width: 250px;" autocomplete="on" placeholder="Selection ou Cree nouveau designation" /></div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group mb-3"><label class="form-label" for="text-input"></label><input id="text-input-2" type="text" name="unite-input" style="width: 60px;" autocomplete="on" value="m²" /></div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group mb-3"><label class="form-label" for="text-input"></label><input id="text-input-3" type="text" name="quantite-input" style="width: 60px;" autocomplete="on" /></div>
+                                    </td>
+                                    <td style="width: 70.1406px;">
+                                        <div class="form-group mb-3"><label class="form-label" for="text-input"></label><input id="text-input-4" type="text" name="prix-unite-input" style="width: 60px;" autocomplete="on" /></div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group mb-3"><label class="form-label" for="text-input"></label><input id="text-input-5" type="text" data-bs-toggle="tooltip" data-bs-placement="bottom" name="tva-input" style="width: 60px;" autocomplete="on" value="20" title="%" /></div>
+                                    </td>
+                                    <td>
+                                        <div class="form-group mb-3"><label class="form-label" for="text-input"></label><input id="text-input-6" type="text" name="total-ht-input" style="width: 60px;" autocomplete="on" readonly /></div>
+                                    </td>
+                                    <td style="width: 41px;height: 41px;"><i class="far fa-trash-alt fa-fw"></i></td>
+                                    <td style="height: 41px;width: 41px;"><i class="fas fa-edit fa-fw"></i></td>
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr class="fw-bold"></tr>
+                            </tfoot>
+                        </table>
+                    </div>
+                    <div class="card">
+                        <div class="card-img-overlay" style="position: static;text-align: left;">
+                            <a href="#" class="link-underline-light"><span style="color: rgb(1, 126, 132);">[Ajouter une ligne] &nbsp;&nbsp;</span></a>
+                            <a href="#" class="link-underline-light"><span style="color: rgb(1, 88, 92);">[Ajouter une note]</span></a>
+                            <a class="btn btn-info btn-sm border rounded" role="button" href="404.html" style="margin: 10px;text-align: right;">Confirmer</a>
+                            <a class="btn btn-info btn-sm border rounded" role="button" href="404.html" style="margin: 10px;text-align: right;">Aperçu</a>
+                            <a class="btn btn-danger btn-sm border rounded" role="button" href="404.html" style="margin: 10px;text-align: right;">Annuler</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12 col-xl-8 offset-lg-0" style="width: 960px;">
+            <div class="card shadow mb-4"></div>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

@@ -1,0 +1,60 @@
+{% extends "layout.html" %}
+
+{% block content%}
+<div id="content-wrapper" class="d-flex flex-column">
+    <div id="content">
+
+        <div class="container-fluid">
+            <div class="card shadow mb-3" style="width: 560px;height: 600px;margin: 5px;padding: 5px;">
+                <div class="card-header py-3">
+                    <p class="text-primary m-0 fw-bold">Nouveau Client</p>
+                </div>
+                <div class="card-body">
+                    <form>
+                        <div class="row" style="margin-bottom: 25px;text-align: left;">
+                            <div class="col-sm-8 col-md-8 col-lg-9 col-xl-10 col-xxl-10 align-self-center">
+                                <div class="row">
+                                    <div class="col-md-12 text-start">
+                                        <div class="mb-3"><label class="form-label" for="client_name"><strong>Nom et Prenom</strong></label><input id="email" class="form-control" type="text" name="client_name" required /></div>
+                                    </div>
+                                    <div class="col-md-12 text-start">
+                                        <div class="mb-3"><label class="form-label" for="adresse"><strong>Adresse</strong></label><input class="form-control" type="text" name="adresse" required /></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 text-start">
+                                <div class="mb-3"><label class="form-label" for="c_telephone"><strong>Telephone</strong></label><input id="password" class="form-control" type="tel" name="c_telephone" /></div>
+                            </div>
+                            <div class="col-md-6 text-start">
+                                <div class="mb-3"><label class="form-label" for="c_tel_mobile"><strong>Telephone Mobile</strong></label><input id="verifyPassword" class="form-control" type="tel" name="c_tel_mobile" /></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3"><label class="form-label" for="first_name"><strong>e-mail</strong></label><input class="form-control" type="text" name="first_name" required /></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3"><label class="form-label" for="c_site_web"><strong>site-web</strong></label><input class="form-control" type="text" name="c_site_web" required /></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3"><label class="form-label" for="c_no_TVA"><strong>No TVA</strong></label><input id="cityId" class="form-control" type="text" name="c_no_TVA" required /></div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3"><label class="form-label" for="c_notes"><strong>Notes;</strong></label><input class="form-control" type="text" name="c_notes" /></div>
+                            </div>
+                            <div class="col">
+                                <p id="emailErrorMsg" class="text-danger" style="display: none;"></p>
+                                <p id="passwordErrorMsg" class="text-danger" style="display: none;"></p>
+                            </div>
+                            <div class="col-md-12" style="text-align: right;margin-top: 5px;"><button id="submitBtn" class="btn btn-primary btn-sm" type="button" style="border-radius: 4px;border-width: 1px;">Enregistrer </button><button id="submitBtn-1" class="btn btn-primary btn-sm" type="reset" style="margin: 4px;color: var(--bs-btn-color);background: var(--bs-danger-text-emphasis);border-radius: 4px;border-width: 1px;">Effacer</button></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-white sticky-footer">
+        <div class="container my-auto">
+            <div class="text-center my-auto copyright"><a href="404.html"><span><br /><span style="color: rgb(133, 135, 150);">Copyright © Aydin BURSA 2024</span><br /><br /></span></a></div>
+        </div>
+    </footer>
+</div>
+{% endblock %}
